@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "screenme"
+version = "0.1.0"
+description = ""
+authors = ["Erik Bjäreholt <erik@bjareho.lt>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.8.0.76"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+screenme = "screenme.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
